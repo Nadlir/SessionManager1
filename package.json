@@ -9,7 +9,9 @@
     "dev:api": "tsx watch server/index.ts",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "cors": "^2.8.6",
