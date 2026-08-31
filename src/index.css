@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tertiary-container: #27c56a;
+  --color-error-container: #ffdad6;
+  --color-primary-fixed: #ffdcc5;
+  --color-on-surface-variant: #554337;
+  --color-surface-tint: #944a00;
+  --color-on-tertiary-fixed-variant: #005227;
+  --color-surface-container-low: #eff4ff;
+  --color-on-tertiary-container: #004b23;
+  --color-on-primary-container: #673200;
+  --color-outline: #887365;
+  --color-on-secondary-container: #725b00;
+  --color-on-secondary: #ffffff;
+  --color-surface-bright: #f8f9ff;
+  --color-background: #f8f9ff;
+  --color-on-primary-fixed-variant: #713700;
+  --color-outline-variant: #dbc1b2;
+  --color-semantic-error: #f87171;
+  --color-on-secondary-fixed-variant: #574500;
+  --color-primary: #944a00;
+  --color-surface-container-high: #dce9ff;
+  --color-on-tertiary-fixed: #00210c;
+  --color-primary-container: #fb923c;
+  --color-on-surface: #0b1c30;
+  --color-tertiary: #006d36;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface: #f8f9ff;
+  --color-secondary: #735c00;
+  --color-on-surface-strong: #0f172a;
+  --color-amber-accent: #fef3c7;
+  --color-secondary-fixed: #ffe086;
+  --color-on-primary: #ffffff;
+  --color-surface-dim: #cbdbf5;
+  --color-tertiary-fixed-dim: #4de082;
+  --color-on-error: #ffffff;
+  --color-surface-warm: #fff7ed;
+  --color-inverse-primary: #ffb783;
+  --color-inverse-surface: #213145;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-lowest: #ffffff;
+  --color-surface-variant: #d3e4fe;
+  --color-surface-container: #e5eeff;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-tertiary-fixed: #6dfe9c;
+  --color-on-background: #0b1c30;
+  --color-on-secondary-fixed: #231b00;
+  --color-secondary-fixed-dim: #eac33e;
+  --color-on-primary-fixed: #301400;
+  --color-primary-fixed-dim: #ffb783;
+  --color-error: #ba1a1a;
+  --color-secondary-container: #fcd34d;
+  --color-on-error-container: #93000a;
+  --color-on-tertiary: #ffffff;
+
+  --spacing-margin-mobile: 16px;
+  --spacing-xl: 80px;
+  --spacing-margin-desktop: 64px;
+  --spacing-lg: 48px;
+  --spacing-base: 8px;
+  --spacing-md: 24px;
+  --spacing-gutter: 24px;
+  --spacing-xs: 4px;
+  --spacing-sm: 12px;
+
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--letter-spacing: -0.01em;
+  --text-headline-lg--font-weight: 600;
+
+  --text-display: 48px;
+  --text-display--line-height: 56px;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 700;
+
+  --text-headline-lg-mobile: 24px;
+  --text-headline-lg-mobile--line-height: 32px;
+  --text-headline-lg-mobile--font-weight: 600;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+  --text-body-sm--font-weight: 400;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--font-weight: 500;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--font-weight: 400;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+
+  --text-label-md: 14px;
+  --text-label-md--line-height: 20px;
+  --text-label-md--letter-spacing: 0.01em;
+  --text-label-md--font-weight: 600;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow: hidden;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dbc1b2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #887365;
+}
+
+.table-row-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.table-row-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(251, 146, 60, 0.05);
+  background-color: #ffffff;
+  z-index: 10;
+  position: relative;
+}
