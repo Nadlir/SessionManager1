@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom"
 import { Layout } from "./components/Layout"
 import { HubProvider } from "./context/HubContext"
 import { PatientsPage } from "./pages/PatientsPage"
@@ -7,7 +7,7 @@ import { SessionsPage } from "./pages/SessionsPage"
 export default function App() {
   return (
     <HubProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Navigate to="/sessions" replace />} />
@@ -16,7 +16,7 @@ export default function App() {
             <Route path="/patients" element={<PatientsPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </HubProvider>
   )
 }
